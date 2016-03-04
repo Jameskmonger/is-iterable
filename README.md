@@ -11,3 +11,7 @@ var iterable = isiterable([ 1, 2, 3, 4]); // true
 
 var notIterable = isiterable(5); // false
 ```
+
+## License
+
+[MIT License](/LICENSE)
