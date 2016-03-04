@@ -1,7 +1,7 @@
 var isiterable = require('./index.js');
 
 (function() {
-    console.log ("should return false for undefined");
+    console.log("should return false for undefined");
 
     if (isiterable(undefined)) {
         throw new Error("should return false for undefined");
@@ -9,7 +9,7 @@ var isiterable = require('./index.js');
 })();
 
 (function() {
-    console.log ("should return false for null");
+    console.log("should return false for null");
 
     if (isiterable(null)) {
         throw new Error("should return false for null");
@@ -17,7 +17,7 @@ var isiterable = require('./index.js');
 })();
 
 (function() {
-    console.log ("should return true for string");
+    console.log("should return true for string");
 
     if (!isiterable("test string")) {
         throw new Error("should return true for string");
@@ -25,7 +25,7 @@ var isiterable = require('./index.js');
 })();
 
 (function() {
-    console.log ("should return true for number array");
+    console.log("should return true for number array");
 
     if (!isiterable([ 1, 2, 3, 4 ])) {
         throw new Error("should return true for number array");
