@@ -39,3 +39,11 @@ var isiterable = require('./index.js');
         throw new Error("should return true for array of null");
     }
 })();
+
+(function() {
+    console.log("should return true for array of object");
+
+    if (!isiterable([ {}, {}, {}, {} ])) {
+        throw new Error("should return true for array of object");
+    }
+})();
