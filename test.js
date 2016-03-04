@@ -47,3 +47,11 @@ var isiterable = require('./index.js');
         throw new Error("should return true for array of object");
     }
 })();
+
+(function() {
+    console.log("should return false for boolean");
+
+    if (isiterable(true)) {
+        throw new Error("should return false for boolean");
+    }
+})();
