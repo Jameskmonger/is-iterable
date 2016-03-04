@@ -23,3 +23,11 @@ var isiterable = require('./index.js');
         throw new Error("should return true for string");
     }
 })();
+
+(function() {
+    console.log ("should return true for number array");
+
+    if (!isiterable([ 1, 2, 3, 4 ])) {
+        throw new Error("should return true for number array");
+    }
+})();
