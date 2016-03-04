@@ -1,0 +1,19 @@
+{
+  "name": "is-iterable",
+  "version": "0.0.1",
+  "description": "Detect if an object is iterable",
+  "main": "index.js",
+  "scripts": {
+    "test": "]"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jameskmonger/is-iterable.git"
+  },
+  "author": "James Monger <jameskmonger@hotmail.co.uk>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Jameskmonger/is-iterable/issues"
+  },
+  "homepage": "https://github.com/Jameskmonger/is-iterable"
+}
