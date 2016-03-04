@@ -7,3 +7,11 @@ var isiterable = require('./index.js');
         throw new Error("should return false for undefined");
     }
 })();
+
+(function() {
+    console.log ("Testing returns false for null");
+
+    if (isiterable(null)) {
+        throw new Error("should return false for null");
+    }
+})();
