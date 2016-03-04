@@ -4,8 +4,10 @@ Easily detect if an object is [iterable](https://developer.mozilla.org/en/docs/W
 
 ## Usage
 
-    var isiterable = require('isiterable');
+```javascript
+var isiterable = require('isiterable');
 
-    var iterable = isiterable([ 1, 2, 3, 4]); // true
+var iterable = isiterable([ 1, 2, 3, 4]); // true
 
-    var notIterable = isiterable(5); // false
+var notIterable = isiterable(5); // false
+```
