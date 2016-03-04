@@ -55,3 +55,11 @@ var isiterable = require('./index.js');
         throw new Error("should return false for boolean");
     }
 })();
+
+(function() {
+    console.log("should return false for object");
+
+    if (isiterable({ value: 5 })) {
+        throw new Error("should return false for object");
+    }
+})();
