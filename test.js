@@ -1,7 +1,7 @@
 var isiterable = require('./index.js');
 
 (function() {
-    console.log ("Testing returns false for undefined");
+    console.log ("should return false for undefined");
 
     if (isiterable(undefined)) {
         throw new Error("should return false for undefined");
@@ -9,7 +9,7 @@ var isiterable = require('./index.js');
 })();
 
 (function() {
-    console.log ("Testing returns false for null");
+    console.log ("should return false for null");
 
     if (isiterable(null)) {
         throw new Error("should return false for null");
