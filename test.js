@@ -31,3 +31,11 @@ var isiterable = require('./index.js');
         throw new Error("should return true for number array");
     }
 })();
+
+(function() {
+    console.log("should return true for array of null");
+
+    if (!isiterable([ null, null, null, null ])) {
+        throw new Error("should return true for array of null");
+    }
+})();
