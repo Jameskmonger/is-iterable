@@ -1,6 +1,6 @@
 {
   "name": "isiterable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect if an object is iterable",
   "main": "index.js",
   "scripts": {
