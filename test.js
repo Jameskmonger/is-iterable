@@ -15,3 +15,11 @@ var isiterable = require('./index.js');
         throw new Error("should return false for null");
     }
 })();
+
+(function() {
+    console.log ("should return true for string");
+
+    if (!isiterable("test string")) {
+        throw new Error("should return true for string");
+    }
+})();
