@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jameskmonger/is-iterable/issues"
   },
-  "homepage": "https://github.com/Jameskmonger/is-iterable"
+  "homepage": "https://github.com/Jameskmonger/is-iterable",
+  "files": [
+      "index.js"
+  ]
 }
