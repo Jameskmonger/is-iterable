@@ -1,5 +1,5 @@
 (function(mod) {
     mod.exports = function (obj) {
-        return (obj !== undefined && obj !== null && typeof obj[Symbol.iterator] === 'function');
+        return (obj != null && typeof Symbol !== 'undefined' && Symbol && typeof obj[Symbol.iterator] === 'function');
     };
 })(module);
