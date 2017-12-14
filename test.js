@@ -63,3 +63,25 @@ var isiterable = require('./index.js');
         throw new Error("should return false for object");
     }
 })();
+
+(function() {
+    var oldSymbol = global.Symbol;
+
+    try {
+        delete global.Symbol;
+
+        console.log("should return false if Symbol is not defined");
+
+        if (isiterable([ 1, 2, 3, 4 ])) {
+            throw new Error("should return false if Symbol is not defined");
+        }
+    } catch (error) {
+        if (error instanceof ReferenceError) {
+            throw new Error("should not raise an exception if Symbol is not defined");
+        } else {
+            throw error;
+        }
+    } finally {
+        global.Symbol = oldSymbol;
+    }
+})();
